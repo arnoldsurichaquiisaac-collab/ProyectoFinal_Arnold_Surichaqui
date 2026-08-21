@@ -1,17 +1,40 @@
 package www.cibertec;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import java.util.Arrays;
+import java.util.List;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+public class Main {
+    public static void main(String[] args) {
+        double venta = 0;
+
+        for (int contador = 1; contador <= 6; contador++) {
+
+            if (contador == 1) {
+                venta = 1200;
+            } else if (contador == 2) {
+                venta = 950;
+            } else if (contador == 3) {
+                venta = 1800;
+            } else if (contador == 4) {
+                venta = 2600;
+            } else if (contador == 5) {
+                venta = 700;
+            } else {
+                venta = 3100;
+            }
+
+            if (venta >= 2500) {
+                System.out.println("Venta : " + contador + " " + venta + " = Venta alta :) ");
+
+            } else if (venta >= 1000) {
+                System.out.println("Venta : " + contador + " " + venta + " = Venta media :/ ");
+
+            } else {
+                System.out.println("Venta : " + contador + " " + venta + " = Venta baja :( ");
+
+                //buenas noches profesor
+
+            }
         }
     }
 }
