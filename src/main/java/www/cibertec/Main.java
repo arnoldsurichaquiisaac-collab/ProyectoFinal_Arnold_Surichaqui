@@ -1,7 +1,7 @@
 package www.cibertec;
 
 public class Main {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         double venta = 0;
 
         for (int contador = 1; contador <= 6; contador++) {
@@ -22,14 +22,10 @@ public class Main {
 
             if (venta >= 2500) {
                 System.out.println("Venta : " + contador + " " + venta + " = Venta alta :) ");
-
             } else if (venta >= 1000) {
                 System.out.println("Venta : " + contador + " " + venta + " = Venta media :/ ");
-
             } else {
                 System.out.println("Venta : " + contador + " " + venta + " = Venta baja :( ");
-
-                //buenas noches profesor
 
             }
         }
